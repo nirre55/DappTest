@@ -8,7 +8,8 @@ import {
   BatchTransactions,
   PingPongRaw,
   PingPongService,
-  Transactions
+  Transactions,
+  NFTCollection
 } from './widgets';
 import { useScrollToElement } from 'hooks';
 import { Widget } from './components';
@@ -84,6 +85,13 @@ const WIDGETS: WidgetType[] = [
     description: 'List transactions filtered for a given Smart Contract',
     reference:
       'https://api.elrond.com/#/accounts/AccountController_getAccountTransactions'
+  },
+  {
+    title: 'Mes NFTs',
+    widget: NFTCollection,
+    description: 'Liste des NFTs possédés pour une collection spécifique',
+    reference: 'https://docs.multiversx.com/tokens/nft-tokens/',
+    anchor: 'nft-collection'
   }
 ];
 
